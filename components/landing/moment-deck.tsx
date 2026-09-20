@@ -5,10 +5,10 @@ import { motion, useMotionValue, useReducedMotion, useTransform, type PanInfo } 
 import { useState } from "react";
 
 const source = [
-  { id: "01", img: "/images/moments/01-caixa-apertou.webp", title: "O caixa apertou", body: "Parcelas, juros e compromissos começaram a consumir o capital de giro." },
-  { id: "02", img: "/images/moments/02-credores-pressionam.webp", title: "Os credores começaram a pressionar", body: "Bancos, fornecedores e outras dívidas disputam o mesmo caixa." },
-  { id: "03", img: "/images/moments/03-cobranca-processo.webp", title: "A dívida virou cobrança ou processo", body: "Execuções, bloqueios e passivos já afetam a operação." },
-  { id: "04", img: "/images/moments/04-reorganizacao.webp", title: "A empresa precisa se reorganizar", body: "Quando negociar uma dívida por vez já não resolve." },
+  { id: "01", img: "/images/moments/01-caixa-apertou.png", title: "O caixa apertou", body: "Parcelas, juros e compromissos começaram a consumir o capital de giro." },
+  { id: "02", img: "/images/moments/02-credores-pressionam.png", title: "Os credores começaram a pressionar", body: "Bancos, fornecedores e outras dívidas disputam o mesmo caixa." },
+  { id: "03", img: "/images/moments/03-cobranca-ou-processo.png", title: "A dívida virou cobrança ou processo", body: "Execuções, bloqueios e passivos já afetam a operação." },
+  { id: "04", img: "/images/moments/04-reorganizacao.png", title: "A empresa precisa se reorganizar", body: "Quando negociar uma dívida por vez já não resolve." },
 ];
 
 export function MomentDeck() {
