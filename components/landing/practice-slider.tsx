@@ -4,11 +4,11 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 
 const areas = [
-  { id: "01", img: "/images/practice/01-contratos.webp", title: "Contratos e dívidas bancárias", body: "Contratos, garantias e obrigações com instituições financeiras." },
-  { id: "02", img: "/images/practice/02-negociacao.webp", title: "Negociação com credores", body: "Bancos, fornecedores e outros compromissos da empresa." },
-  { id: "03", img: "/images/practice/03-cobrancas.webp", title: "Cobranças e execuções", body: "Defesa diante de cobranças judiciais, execuções e bloqueios." },
-  { id: "04", img: "/images/practice/04-garantias.webp", title: "Garantias e exposição patrimonial", body: "Análise das garantias envolvidas e dos riscos relacionados à dívida." },
-  { id: "05", img: "/images/practice/05-recuperacao.webp", title: "Recuperação judicial", body: "Avaliação quando uma reorganização mais ampla precisa ser considerada." },
+  { id: "01", img: "/images/services/contratos.png", title: "Contratos e dívidas bancárias", body: "Contratos, garantias e obrigações com instituições financeiras." },
+  { id: "02", img: "/images/services/negociacao.png", title: "Negociação com credores", body: "Bancos, fornecedores e outros compromissos da empresa." },
+  { id: "03", img: "/images/services/cobrancas.png", title: "Cobranças e execuções", body: "Defesa diante de cobranças judiciais, execuções e bloqueios." },
+  { id: "04", img: "/images/services/garantias.png", title: "Garantias e exposição patrimonial", body: "Análise das garantias envolvidas e dos riscos relacionados à dívida." },
+  { id: "05", img: "/images/services/recuperacao.png", title: "Recuperação judicial", body: "Avaliação quando uma reorganização mais ampla precisa ser considerada." },
 ];
 
 export function PracticeSlider() {
