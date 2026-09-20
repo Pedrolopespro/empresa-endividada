@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const avatars = [1, 1, 1, 1, 1];
+const avatars = [1, 2, 3, 4, 5];
 
 export function SocialProofCard() {
   return (
