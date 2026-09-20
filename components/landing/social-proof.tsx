@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const avatars = [1, 2, 3, 4, 5];
+const avatars = [1, 1, 1, 1, 1];
 
 export function SocialProofCard() {
   return (
@@ -12,8 +12,8 @@ export function SocialProofCard() {
       </div>
       <div className="proof-card__bottom">
         <div className="proof-avatars" aria-hidden="true">
-          {avatars.map((id) => (
-            <span key={id}><Image src={`/images/avatars/${id}.webp`} alt="" width={48} height={48} /></span>
+          {avatars.map((id, index) => (
+            <span key={index}><Image src={`/images/avatars/${id}.webp`} alt="" width={48} height={48} /></span>
           ))}
         </div>
         <div className="proof-stars" aria-label="Avaliação cinco de cinco">★★★★★</div>
