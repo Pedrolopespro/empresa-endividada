@@ -13,7 +13,7 @@ export function Hero() {
         <div className="hero__media">
           <div className="service-pill hero-enter hero-enter--1">
             <span className="service-pill__dot" aria-hidden="true"><i /></span>
-            <span>serviço jurídico para empresas endividadas</span>
+            <span>assessoria jurídica para empresas endividadas</span>
           </div>
 
           <div className="vsl hero-enter hero-enter--2" aria-label="Vídeo de apresentação">
@@ -31,8 +31,8 @@ export function Hero() {
             <span className="hero-title__line hero-title__line--muted hero-enter hero-enter--4">está endividada?</span>
           </h1>
           <p className="hero-lead hero-enter hero-enter--5">
-            <span>Recupere o controle com</span><br />
-            <span>estratégia jurídica personalizada</span>
+            <span>Estratégia jurídica sob medida</span><br />
+            <span>para reorganizar as dívidas da sua empresa</span>
           </p>
           <PrimaryCta className="hero-enter hero-enter--6" />
         </div>

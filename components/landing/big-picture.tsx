@@ -58,8 +58,8 @@ export function BigPicture() {
           <Image src="/images/big-picture/impacto.webp" alt="Empresário observando o cenário a partir de uma perspectiva ampla" fill sizes="(min-width: 900px) 1040px, 100vw" className="impact-panel__image" />
           <span className="impact-panel__shade" aria-hidden="true" />
           <div className="impact-panel__copy">
-            <p>O jogo vira quando você<br />enxerga o todo.</p>
-            <p><em>Quem entende o cenário,<br />negocia diferente.</em></p>
+            <p>Tudo muda quando você<br />enxerga o cenário inteiro.</p>
+            <p><em>Quem entende o todo,<br />negocia em outra posição.</em></p>
           </div>
         </div>
       </div>

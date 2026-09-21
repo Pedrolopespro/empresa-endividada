@@ -5,7 +5,7 @@ export function Moments() {
     <section className="section moments" id="momentos" data-theme="papel">
       <div className="narrative-shell moments__inner">
         <h2 className="section-title section-title--two-tone">
-          <span>Uma assessoria jurídica estratégica para cada </span>
+          <span>Uma estratégia jurídica para cada </span>
           <em>momento<br className="mobile-only" /> da sua empresa.</em>
         </h2>
         <MomentDeck />

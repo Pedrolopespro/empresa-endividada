@@ -1,27 +1,60 @@
 :root {
+  /* Brand — locked */
   --black: #000000;
   --paper: #f1f3f2;
   --gold: #e8b606;
   --gold-deep: #c99700;
   --gold-soft: #f5d55c;
   --gold-glow: rgba(232,182,6,.22);
-  --ink-night: #ffffff;
-  --muted-night: #a6a6a6;
-  --ink-paper: #262626;
-  --muted-paper: #5e5e5e;
+
+  /* Surfaces (one raised tone per theme, used everywhere instead of ad hoc grays) */
+  --surface-2: #131313;
+  --surface-3: #0a0a0a;
+  --surface-2-paper: #ffffff;
+
+  /* Ink ladders — three steps per theme, used consistently */
+  --ink-1: #ffffff;
+  --ink-2: #aeaeae;
+  --ink-3: #757575;
+  --ink-1p: #1a1a1a;
+  --ink-2p: #62625d;
+  --ink-3p: #9b9a94;
   --display-muted: #7a7a7a;
-  --line-night: #262626;
-  --line-paper: #d5d9d7;
+
+  --line-night: #242424;
+  --line-paper: #d9dcd9;
   --green-live: #0a9a4f;
   --iris-lilac: #d8c4ff;
   --iris-sky: #a9d6ff;
-  --radius-sm: 12px;
-  --radius-md: 16px;
+
+  /* Radius */
+  --radius-xs: 10px;
+  --radius-sm: 14px;
+  --radius-md: 18px;
   --radius-lg: 24px;
   --radius-xl: 32px;
   --radius-pill: 999px;
+
+  /* Spacing (4px base) */
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 20px;
+  --sp-6: 24px; --sp-7: 28px; --sp-8: 32px; --sp-10: 40px; --sp-12: 48px;
+  --sp-14: 56px; --sp-16: 64px; --sp-20: 80px; --sp-24: 96px; --sp-28: 112px; --sp-32: 128px;
+
+  /* Type scale — Helvetica everywhere except the hero display, per brand guide */
+  --fs-eyebrow: 12px; --lh-eyebrow: 16px;
+  --fs-caption: 14px; --lh-caption: 20px;
+  --fs-body-sm: 15px; --lh-body-sm: 23px;
+  --fs-body: 17px; --lh-body: 26px;
+  --fs-body-lg: 19px; --lh-body-lg: 28px;
+  --fs-card-title: clamp(20px, 2.4vw, 22px); --lh-card-title: 1.22;
+  --fs-h3: clamp(24px, 3vw, 28px); --lh-h3: 1.2;
+  --fs-h2: clamp(32px, 4.2vw, 44px); --lh-h2: 1.12;
+  --fs-h1: clamp(40px, 9vw, 76px); --lh-h1: 1.05;
+  --fs-numeral: clamp(80px, 9vw, 120px);
+
   --font-display: var(--font-poppins), Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-text: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   --ease-out: cubic-bezier(.16,1,.3,1);
   --ease-spring: cubic-bezier(.34,1.56,.64,1);
   --ease-in-out: cubic-bezier(.65,0,.35,1);
@@ -34,13 +67,23 @@ button, a { -webkit-tap-highlight-color: transparent; }
 button { font: inherit; }
 button:focus-visible, a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 img { display: block; }
-[data-theme="papel"] { background: var(--paper); color: var(--ink-paper); }
-[data-theme="noite"] { background: var(--black); color: var(--ink-night); }
-.section { position: relative; padding: 80px 24px; }
-.narrative-shell { width: min(100%, 680px); margin-inline: auto; }
+[data-theme="papel"] { background: var(--paper); color: var(--ink-1p); }
+[data-theme="noite"] { background: var(--black); color: var(--ink-1); }
+
+.section { position: relative; padding: var(--sp-20) var(--sp-5); }
+.narrative-shell { width: min(100%, 640px); margin-inline: auto; }
 .wide-shell { width: min(100%, 1180px); margin-inline: auto; }
 .mobile-only { display: block; }
-.section-title { margin: 0; font: 700 clamp(32px, 4.4vw, 48px)/1.12 var(--font-text); letter-spacing: -.035em; }
+
+.eyebrow { margin: 0 0 var(--sp-3); font: 600 var(--fs-eyebrow)/var(--lh-eyebrow) var(--font-text); letter-spacing: .12em; text-transform: uppercase; }
+.eyebrow--night { color: var(--ink-3); }
+.eyebrow--paper { color: var(--ink-3p); }
+
+.section-head { margin-bottom: var(--sp-10); }
+.section-title { margin: 0; font: 600 var(--fs-h2)/var(--lh-h2) var(--font-text); letter-spacing: -.03em; }
 .section-title--light { color: #fff; }
 .section-title--two-tone > span { color: var(--display-muted); }
-.section-title--two-tone em { color: var(--ink-paper); font-style: italic; font-weight: 500; }
+.section-title--two-tone em { color: var(--ink-1p); font-style: italic; font-weight: 500; }
+.section-lead { margin: var(--sp-4) 0 0; font: 400 var(--fs-body)/var(--lh-body) var(--font-text); }
+.section-lead--night { color: var(--ink-2); }
+.section-lead--paper { color: var(--ink-2p); }

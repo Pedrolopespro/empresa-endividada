@@ -19,7 +19,7 @@ export function PracticeSlider() {
   return (
     <section className="section practice" id="atuacao" data-theme="noite">
       <div className="wide-shell practice__head">
-        <h2 className="section-title section-title--light">Onde nossa atuação entra</h2>
+        <h2 className="section-title section-title--light">Frentes de atuação</h2>
         <p>Uma estratégia pode exigir diferentes frentes jurídicas ao longo do caminho.</p>
       </div>
       <div
