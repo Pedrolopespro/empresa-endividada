@@ -27,11 +27,11 @@ export function BigPicture() {
       <div className="wide-shell big-picture__inner">
         <div className={`big-panel ${visible ? "is-visible" : ""}`} ref={ref}>
           <div className="big-header">
-            <div className="big-lockup" aria-label="The Big Picture">
+            <div className="big-lockup" aria-label="Visão completa">
               <svg viewBox="0 0 360 174" role="img" aria-hidden="true">
                 <defs><linearGradient id="bigGradient" x1="0" x2="1"><stop stopColor="#b9b9b9"/><stop offset="1" stopColor="#626262"/></linearGradient></defs>
-                <text x="4" y="82" fill="url(#bigGradient)" fontFamily="Helvetica Neue,Helvetica,Arial,sans-serif" fontSize="92" fontWeight="800" letterSpacing="-6">the big</text>
-                <text x="7" y="150" textLength="323" lengthAdjust="spacing" fill="#fff" fontFamily="Helvetica Neue,Helvetica,Arial,sans-serif" fontSize="35" fontWeight="700">picture</text>
+                <text x="4" y="88" fill="url(#bigGradient)" fontFamily="Helvetica Neue,Helvetica,Arial,sans-serif" fontSize="104" fontWeight="800" letterSpacing="-3">visão</text>
+                <text x="7" y="150" textLength="250" lengthAdjust="spacingAndGlyphs" fill="#fff" fontFamily="Helvetica Neue,Helvetica,Arial,sans-serif" fontSize="35" fontWeight="700">completa</text>
               </svg>
             </div>
             <span className="big-divider" aria-hidden="true" />

@@ -10,20 +10,18 @@ export function Hero() {
       <div className="hero__inner">
         <Image className="hero__logo" src="/images/brand/logo-branca.webp" alt="Empresa Endividada" width={1024} height={224} priority />
 
-        <div className="service-pill hero-enter hero-enter--1">
-          <span className="service-pill__star" aria-hidden="true">✳</span>
-          <span>serviço jurídico para empresas endividadas</span>
-        </div>
+        <div className="hero__media">
+          <div className="service-pill hero-enter hero-enter--1">
+            <span className="service-pill__dot" aria-hidden="true"><i /></span>
+            <span>serviço jurídico para empresas endividadas</span>
+          </div>
 
-        <div className="vsl hero-enter hero-enter--2" aria-label="Vídeo de apresentação">
-          <Image src="/images/hero/luana-vsl.webp" alt="Dra. Luana Lima apresentando a assessoria" fill priority sizes="(min-width: 1024px) 960px, calc(100vw - 48px)" className="vsl__poster" />
-          <span className="vsl__shade" aria-hidden="true" />
-          <button type="button" className="vsl__play" aria-label="Reproduzir vídeo" disabled>
-            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-          </button>
-          <div className="vsl__controls" aria-hidden="true">
-            <div className="vsl__track"><i /></div>
-            <div className="vsl__times"><span>00:00</span><span>00:44</span></div>
+          <div className="vsl hero-enter hero-enter--2" aria-label="Vídeo de apresentação">
+            <Image src="/images/hero/luana-vsl.webp" alt="Dra. Luana Lima apresentando a assessoria" fill priority sizes="(min-width: 1024px) 960px, calc(100vw - 48px)" className="vsl__poster" />
+            <span className="vsl__shade" aria-hidden="true" />
+            <button type="button" className="vsl__play" aria-label="Reproduzir vídeo" disabled>
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+            </button>
           </div>
         </div>
 

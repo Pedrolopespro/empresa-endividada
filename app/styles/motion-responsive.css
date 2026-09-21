@@ -12,7 +12,7 @@
   .section { padding-top:96px; padding-bottom:96px; }
   .hero { padding:42px 40px 94px; }
   .hero__logo { width:300px; margin-bottom:34px; }
-  .service-pill { margin-bottom:32px; }
+  .hero__media { gap:24px; }
   .hero__copy { margin-top:50px; }
   .hero__proof { margin-top:58px; }
   .proof-card { min-height:190px; padding:30px 40px; }
@@ -29,7 +29,7 @@
   .flow-map { margin-top:44px; gap:26px; }
   .flow-row--top { grid-template-columns:minmax(150px,1fr) 46px minmax(150px,1fr) 46px minmax(150px,1fr); }
   .flow-row--bottom { grid-template-columns:minmax(160px,1fr) minmax(120px,1.3fr) minmax(160px,1fr); width:66%; }
-  .flow-chip { height:46px; padding:0 18px; }
+  .flow-chip { height:48px; padding:0 26px; font-size:15px; }
   .impact-panel { height:740px; }
   .impact-panel__copy { left:64px; top:200px; }
   .impact-panel__copy p { font-size:36px; line-height:1.33; }
@@ -56,12 +56,11 @@
 @media (min-width: 1100px) {
   .hero { padding-top:46px; }
   .hero__inner { width:min(100%,1120px); }
-  .vsl { width:960px; }
+  .hero__media { width:960px; }
   .hero__copy { width:820px; }
   .hero-title { font-size:72px; }
   .hero-lead { font-size:24px; }
   .hero__proof { width:820px; }
-  .moments .section-title { margin-left:-40px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior:auto; }
@@ -89,7 +88,7 @@
   .big-header { grid-template-columns:minmax(0,1.08fr) 1px minmax(0,.92fr); gap:14px; }
   .big-header p { font-size:14px; line-height:1.48; }
   .big-divider { height:112px; }
-  .flow-chip { font-size:14px; padding-inline:8px; }
+  .flow-chip { font-size:13px; padding-inline:14px; }
   .flow-row--top { grid-template-columns:minmax(0,1fr) 13px minmax(0,1fr) 13px minmax(0,1fr); }
   .flow-row--bottom { width:76%; grid-template-columns:minmax(0,1fr) minmax(34px,1fr) minmax(0,1fr); }
   .impact-panel { height:610px; }

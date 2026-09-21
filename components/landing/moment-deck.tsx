@@ -42,8 +42,8 @@ function DeckCard({ card, index, onDismiss, reduce }: { card: (typeof source)[nu
   const rotate = useTransform(x, [-180, 180], [-5, 5]);
   const isFront = index === 0;
   const z = source.length - index;
-  const rot = index === 0 ? 0 : -(2 + index * 3);
-  const tx = index * -10;
+  const rot = index === 0 ? 0 : 2 + index * 3;
+  const tx = index * 10;
   const ty = index * -8;
   const scale = 1 - index * 0.025;
 
@@ -61,7 +61,7 @@ function DeckCard({ card, index, onDismiss, reduce }: { card: (typeof source)[nu
       dragElastic={0.18}
       onDragEnd={end}
       whileDrag={reduce ? undefined : { scale: 1.035, rotate: 0, zIndex: 20 }}
-      transition={reduce ? { duration: .12 } : { type: "spring", stiffness: 340, damping: 28 }}
+      transition={reduce ? { duration: .12 } : { type: "spring", stiffness: 300, damping: 30 }}
       aria-hidden={!isFront}
     >
       <Image src={card.img} alt="" fill sizes="320px" className="deck-card__image" priority={isFront} draggable={false} />
